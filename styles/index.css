@@ -1,10 +1,12 @@
 :root {
   --primary-color: #ff42a5;
+  --secondary-color: #4ec5f7;
   --font-family: "Work Sans", sans-serif;
   --basic-text-color: #534c64;
   --dark-heading: #0b0223;
 }
 
+/* shared styles */
 * {
   margin: 0;
   padding: 0;
@@ -34,6 +36,46 @@ ul {
 
 .text-primary {
   color: var(--primary-color);
+}
+
+.section-title {
+  color: var(--dark-heading);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.background-clipped-text {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn {
+  border: none;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 1.31rem 2.5rem;
+  border-radius: 3rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+}
+
+.btn-alternative {
+  color: var(--primary-color);
+  background-color: #fff;
+}
+
+.section-margin {
+  margin-bottom: 7.5rem;
 }
 
 /* header styles */
@@ -95,4 +137,66 @@ ul {
 .nav-social-media-links-container {
   display: flex;
   gap: 1rem;
+}
+
+/* banner section styles */
+
+.banner {
+  background-image: url("./../assets/banner-bg.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
+
+.banner-content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner-content-container > * {
+  flex-basis: 50%;
+}
+
+.banner-main-img {
+  width: 100%;
+}
+
+.main-website-heading {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.main-website-heading-special {
+  font-size: 5.9375rem;
+  font-weight: 800;
+}
+
+.banner-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.06rem;
+  margin-bottom: 2.56rem;
+}
+
+.banner-feature {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.banner-feature-img {
+  height: 1.5rem;
+}
+
+.banner-feature-text {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.banner-buttons-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }

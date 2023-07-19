@@ -1,7 +1,15 @@
-@media screen and (max-width: 36em) {
+@media screen and (max-width: 62em) {
+  html {
+    font-size: 90%;
+  }
+
+  .nav {
+    margin-bottom: 4.87rem;
+    box-shadow: none;
+  }
+
   .nav-content-container {
     flex-direction: column;
-    align-items: center;
     gap: 3.88rem;
     padding-top: 6.44rem;
   }
@@ -9,6 +17,50 @@
   .nav-menu-items-list {
     flex-direction: column;
     align-items: center;
-    gap: 3.87rem;
+    gap: 2.5rem;
+  }
+
+  .banner {
+    background-image: none;
+  }
+
+  .banner-content-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: initial;
+    gap: 1.56rem;
+  }
+
+  .banner-content-container > * {
+    flex-basis: initial;
+  }
+
+  .banner-main-img {
+    width: 80%;
+  }
+
+  .banner-text-part {
+    align-self: stretch;
+    background-image: url("./../assets/banner-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 90%;
+    margin: 0 auto;
+    height: 43.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 36em) {
+  html {
+    font-size: 70%;
+  }
+
+  .banner-content-container {
+    gap: 0;
   }
 }
