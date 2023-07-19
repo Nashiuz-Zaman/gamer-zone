@@ -41,7 +41,7 @@
 
   .banner-text-part {
     align-self: stretch;
-    background-image: url("./../assets/banner-bg.png");
+    background-image: url("./../assets/banner-bg.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -53,6 +53,33 @@
     justify-content: center;
     align-items: center;
   }
+
+  .we-are-gamers-content-container {
+    flex-direction: column;
+  }
+
+  .we-are-gamers-text-part {
+    align-items: center;
+  }
+
+  .we-are-gamers-title,
+  .we-are-gamers-description {
+    text-align: center;
+  }
+
+  .we-are-gamers-title {
+    margin-bottom: 2rem;
+  }
+
+  .we-are-gamers-description {
+    width: 60%;
+    margin-bottom: 1.5rem;
+  }
+
+  .we-are-gamers-bottom-description {
+    text-align: center;
+    margin-top: 3.75rem;
+  }
 }
 
 @media screen and (max-width: 36em) {
@@ -62,5 +89,15 @@
 
   .banner-content-container {
     gap: 0;
+  }
+
+  .we-are-gamers {
+    padding: 0;
+  }
+
+  .we-are-gamers-description {
+    max-width: 36.5rem;
+    width: 100%;
+    padding-inline: 2rem;
   }
 }
