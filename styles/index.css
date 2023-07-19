@@ -275,9 +275,9 @@ ul {
   margin-bottom: 3rem;
 }
 
-.funny-videos-img-container {
+.funny-videos-cards-container {
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem;
 }
