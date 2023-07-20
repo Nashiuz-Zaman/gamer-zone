@@ -1,83 +1,6 @@
-@media screen and (max-width: 62em) {
+@media screen and (max-width: 82em) {
   html {
-    font-size: 90%;
-  }
-
-  .nav {
-    margin-bottom: 4.87rem;
-    box-shadow: none;
-  }
-
-  .nav-content-container {
-    flex-direction: column;
-    gap: 3.88rem;
-    padding-top: 6.44rem;
-  }
-
-  .nav-menu-items-list {
-    flex-direction: column;
-    align-items: center;
-    gap: 2.5rem;
-  }
-
-  .banner {
-    background-image: none;
-  }
-
-  .banner-content-container {
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: initial;
-    gap: 1.56rem;
-  }
-
-  .banner-content-container > * {
-    flex-basis: initial;
-  }
-
-  .banner-main-img {
-    width: 80%;
-  }
-
-  .banner-text-part {
-    align-self: stretch;
-    background-image: url("./../assets/banner-bg.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 90%;
-    margin: 0 auto;
-    height: 43.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .we-are-gamers-content-container {
-    flex-direction: column;
-  }
-
-  .we-are-gamers-text-part {
-    align-items: center;
-    text-align: center;
-  }
-
-  .we-are-gamers-title {
-    margin-bottom: 2rem;
-  }
-
-  .we-are-gamers-description {
-    width: 60%;
-    margin-bottom: 1.5rem;
-  }
-
-  .we-are-gamers-bottom-description {
-    margin-top: 3.75rem;
-  }
-
-  .funny-videos-cards-container {
-    margin: 0 4rem;
+    font-size: 85%;
   }
 
   .play-instantly-content-container {
@@ -105,17 +28,105 @@
   }
 }
 
-@media screen and (max-width: 36em) {
+@media screen and (max-width: 62em) {
   html {
-    font-size: 70%;
+    font-size: 75%;
+  }
+
+  /* nav styles
+   */
+  .nav {
+    margin-bottom: 4.87rem;
+    box-shadow: none;
+  }
+
+  .nav-content-container {
+    flex-direction: column;
+    gap: 3.88rem;
+    padding-top: 6.44rem;
+  }
+
+  .nav-menu-items-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  /* banner styles */
+
+  .banner-main-img {
+    width: 80%;
+  }
+
+  /* we are gamer styles */
+
+  .we-are-gamers {
+    background-image: none;
+  }
+
+  .we-are-gamers-content-container {
+    grid-template-columns: 1fr;
+  }
+
+  .we-are-gamers-text-part {
+    align-items: center;
+    text-align: center;
+  }
+
+  .we-are-gamers-title {
+    margin-bottom: 2rem;
+  }
+
+  .we-are-gamers-description {
+    width: 60%;
+    margin-bottom: 1.5rem;
+  }
+
+  .we-are-gamers-bottom-description {
+    margin-top: 3.75rem;
+  }
+
+  /* funny videos styles */
+  .funny-videos-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 3rem;
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 50em) {
+  .banner {
+    background: none;
+  }
+
+  .banner-main-img {
+    order: -1;
+    justify-self: center;
   }
 
   .banner-content-container {
-    gap: 0;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 1.6rem;
   }
 
-  .we-are-gamers {
-    padding: 0;
+  .banner-text-part {
+    width: 100%;
+    height: 100%;
+    background-image: url("./../assets/banner-bg.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 36em) {
+  html {
+    font-size: 72.5%;
   }
 
   .we-are-gamers-description {
@@ -125,11 +136,7 @@
   }
 
   .funny-videos-cards-container {
-    gap: 3rem;
-  }
-
-  .funny-video-card {
-    width: 30rem;
+    grid-template-columns: 1fr;
   }
 
   .funny-video-inner-container {
@@ -138,6 +145,10 @@
 
   .funny-video-title {
     text-align: center;
+  }
+
+  .play-instantly-text-part > p {
+    width: 90%;
   }
 
   .game-categories-container {
@@ -180,7 +191,9 @@
   }
 
   .footer-bottom-options-list {
-    width: 45%;
+    width: 50%;
+    column-gap: 0;
+    row-gap: 3rem;
     margin-bottom: 4.6rem;
   }
 
