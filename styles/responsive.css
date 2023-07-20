@@ -56,12 +56,6 @@
     gap: 2.5rem;
   }
 
-  /* banner styles */
-
-  .banner-main-img {
-    width: 80%;
-  }
-
   /* we are gamer styles */
 
   .we-are-gamers {
@@ -106,6 +100,7 @@
 
   .banner-main-img {
     order: -1;
+    width: 80%;
     justify-self: center;
   }
 
