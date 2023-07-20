@@ -40,6 +40,10 @@
     box-shadow: none;
   }
 
+  .nav ul li:nth-child(2) {
+    margin-bottom: 1.4rem;
+  }
+
   .nav-content-container {
     flex-direction: column;
     gap: 3.88rem;
@@ -97,6 +101,7 @@
 @media screen and (max-width: 50em) {
   .banner {
     background: none;
+    padding: 0;
   }
 
   .banner-main-img {
