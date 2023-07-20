@@ -143,6 +143,9 @@ a:visited {
   border-radius: 0.5rem;
   background: rgba(11, 2, 35, 0.1);
   gap: 1.5rem;
+  color: #3c354f;
+  font-size: 1.125rem;
+  font-weight: 500;
 }
 
 .follow-us-container img {
